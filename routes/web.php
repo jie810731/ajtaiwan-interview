@@ -19,3 +19,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')
     ->name('home');
+
+Route::get('oauth-login', 'OauthController@login')
+    ->name('oauth-login');
+
+Route::get('oauth-login/callback', 'OauthController@handleProviderCallback')
+    ->name('oauth-login-callback');

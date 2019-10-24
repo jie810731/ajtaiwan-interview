@@ -55,6 +55,10 @@
                                     Login
                                 </button>
 
+                                <button type="button" class="btn btn-primary" onclick="location.href = 'oauth-login';">
+                                    Google Login
+                                </button>
+
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
                                     Forgot Your Password?
                                 </a>
